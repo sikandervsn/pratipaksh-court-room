@@ -2,7 +2,7 @@
 
 **Know how you'll lose, before you sign.**
 
-**Live testing app for judges:** [pratipaksh.vercel.app](https://pratipaksh.vercel.app) — hosted to make it easy to try and evaluate the project.
+**Live testing link:** [pratipaksh.vercel.app](https://pratipaksh.vercel.app) 
 
 Pratipaksh is an adversarial multi-agent AI built for Indian law. Upload a rental agreement, employment contract, NDA or legal notice. The AI then runs a hearing on it:
 
