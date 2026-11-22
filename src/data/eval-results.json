@@ -1,0 +1,373 @@
+{
+  "summary": {
+    "runAt": "2026-11-15T05:01:35.201Z",
+    "model": "gemini-3.5-flash-lite",
+    "judgeRuns": 3,
+    "cases": 10,
+    "completed": 10,
+    "recall": 1,
+    "falseAlarmRate": 0,
+    "quoteMatchRate": 1,
+    "misquoteRate": 0,
+    "statuteCitations": 38,
+    "caseLawCitations": 35,
+    "fabricated": 0,
+    "verifiedRate": 0.6712328767123288,
+    "docQuoteRate": 0.9787234042553191,
+    "avgSpread": 7.2,
+    "avgSeconds": 50.7,
+    "controlScore": 71
+  },
+  "results": [
+    {
+      "id": "rent-blr",
+      "title": "One-sided rental agreement (Bengaluru)",
+      "ok": true,
+      "seconds": 17,
+      "expected": 10,
+      "caught": 10,
+      "missed": [],
+      "safe": 1,
+      "falseAlarms": [],
+      "winProbability": 41,
+      "consistency": {
+        "runs": [
+          41,
+          43,
+          39
+        ],
+        "spread": 4
+      },
+      "citations": {
+        "total": 6,
+        "statute": 6,
+        "caseLaw": 0,
+        "exact": 6,
+        "close": 0,
+        "misquoted": 0,
+        "fabricated": 0,
+        "verified": 4
+      },
+      "docQuotes": {
+        "total": 5,
+        "found": 5
+      },
+      "retrieved": 24
+    },
+    {
+      "id": "emp-pune",
+      "title": "Predatory employment contract (Pune)",
+      "ok": true,
+      "seconds": 17,
+      "expected": 8,
+      "caught": 8,
+      "missed": [],
+      "safe": 1,
+      "falseAlarms": [],
+      "winProbability": 48,
+      "consistency": {
+        "runs": [
+          49,
+          48,
+          48
+        ],
+        "spread": 1
+      },
+      "citations": {
+        "total": 5,
+        "statute": 5,
+        "caseLaw": 0,
+        "exact": 4,
+        "close": 1,
+        "misquoted": 0,
+        "fabricated": 0,
+        "verified": 5
+      },
+      "docQuotes": {
+        "total": 5,
+        "found": 5
+      },
+      "retrieved": 24
+    },
+    {
+      "id": "nda",
+      "title": "One-way NDA with a startup",
+      "ok": true,
+      "seconds": 22,
+      "expected": 5,
+      "caught": 5,
+      "missed": [],
+      "safe": 1,
+      "falseAlarms": [],
+      "winProbability": 42,
+      "consistency": {
+        "runs": [
+          48,
+          42,
+          36
+        ],
+        "spread": 12
+      },
+      "citations": {
+        "total": 5,
+        "statute": 1,
+        "caseLaw": 4,
+        "exact": 1,
+        "close": 0,
+        "misquoted": 0,
+        "fabricated": 0,
+        "verified": 2
+      },
+      "docQuotes": {
+        "total": 4,
+        "found": 4
+      },
+      "retrieved": 24
+    },
+    {
+      "id": "freelance",
+      "title": "Freelance design services agreement",
+      "ok": true,
+      "seconds": 39,
+      "expected": 5,
+      "caught": 5,
+      "missed": [],
+      "safe": 2,
+      "falseAlarms": [],
+      "winProbability": 43,
+      "consistency": {
+        "runs": [
+          43,
+          35,
+          45
+        ],
+        "spread": 10
+      },
+      "citations": {
+        "total": 6,
+        "statute": 0,
+        "caseLaw": 6,
+        "exact": 0,
+        "close": 0,
+        "misquoted": 0,
+        "fabricated": 0,
+        "verified": 3
+      },
+      "docQuotes": {
+        "total": 4,
+        "found": 4
+      },
+      "retrieved": 23
+    },
+    {
+      "id": "builder",
+      "title": "Builder–buyer agreement (flat purchase)",
+      "ok": true,
+      "seconds": 68,
+      "expected": 4,
+      "caught": 4,
+      "missed": [],
+      "safe": 1,
+      "falseAlarms": [],
+      "winProbability": 42,
+      "consistency": {
+        "runs": [
+          42,
+          42,
+          40
+        ],
+        "spread": 2
+      },
+      "citations": {
+        "total": 7,
+        "statute": 2,
+        "caseLaw": 5,
+        "exact": 2,
+        "close": 0,
+        "misquoted": 0,
+        "fabricated": 0,
+        "verified": 6
+      },
+      "docQuotes": {
+        "total": 5,
+        "found": 5
+      },
+      "retrieved": 20
+    },
+    {
+      "id": "loan",
+      "title": "Private loan agreement",
+      "ok": true,
+      "seconds": 44,
+      "expected": 4,
+      "caught": 4,
+      "missed": [],
+      "safe": 2,
+      "falseAlarms": [],
+      "winProbability": 30,
+      "consistency": {
+        "runs": [
+          30,
+          34,
+          29
+        ],
+        "spread": 5
+      },
+      "citations": {
+        "total": 10,
+        "statute": 7,
+        "caseLaw": 3,
+        "exact": 6,
+        "close": 1,
+        "misquoted": 0,
+        "fabricated": 0,
+        "verified": 7
+      },
+      "docQuotes": {
+        "total": 5,
+        "found": 5
+      },
+      "retrieved": 22
+    },
+    {
+      "id": "gym",
+      "title": "Gym membership terms (consumer)",
+      "ok": true,
+      "seconds": 53,
+      "expected": 3,
+      "caught": 3,
+      "missed": [],
+      "safe": 2,
+      "falseAlarms": [],
+      "winProbability": 40,
+      "consistency": {
+        "runs": [
+          52,
+          40,
+          35
+        ],
+        "spread": 17
+      },
+      "citations": {
+        "total": 8,
+        "statute": 2,
+        "caseLaw": 6,
+        "exact": 2,
+        "close": 0,
+        "misquoted": 0,
+        "fabricated": 0,
+        "verified": 7
+      },
+      "docQuotes": {
+        "total": 5,
+        "found": 4
+      },
+      "retrieved": 24
+    },
+    {
+      "id": "lnl-mumbai",
+      "title": "Leave & licence (Mumbai) — unregistered",
+      "ok": true,
+      "seconds": 68,
+      "expected": 3,
+      "caught": 3,
+      "missed": [],
+      "safe": 1,
+      "falseAlarms": [],
+      "winProbability": 57,
+      "consistency": {
+        "runs": [
+          57,
+          60,
+          44
+        ],
+        "spread": 16
+      },
+      "citations": {
+        "total": 9,
+        "statute": 4,
+        "caseLaw": 5,
+        "exact": 3,
+        "close": 1,
+        "misquoted": 0,
+        "fabricated": 0,
+        "verified": 7
+      },
+      "docQuotes": {
+        "total": 5,
+        "found": 5
+      },
+      "retrieved": 24
+    },
+    {
+      "id": "vendor",
+      "title": "Vendor supply agreement (MSME supplier)",
+      "ok": true,
+      "seconds": 54,
+      "expected": 4,
+      "caught": 4,
+      "missed": [],
+      "safe": 1,
+      "falseAlarms": [],
+      "winProbability": 36,
+      "consistency": {
+        "runs": [
+          36,
+          35,
+          39
+        ],
+        "spread": 4
+      },
+      "citations": {
+        "total": 9,
+        "statute": 6,
+        "caseLaw": 3,
+        "exact": 6,
+        "close": 0,
+        "misquoted": 0,
+        "fabricated": 0,
+        "verified": 4
+      },
+      "docQuotes": {
+        "total": 5,
+        "found": 5
+      },
+      "retrieved": 24
+    },
+    {
+      "id": "fair-rent",
+      "title": "CONTROL: a fair, balanced rental agreement",
+      "ok": true,
+      "seconds": 125,
+      "expected": 0,
+      "caught": 0,
+      "missed": [],
+      "safe": 5,
+      "falseAlarms": [],
+      "winProbability": 71,
+      "consistency": {
+        "runs": [
+          71,
+          72,
+          71
+        ],
+        "spread": 1
+      },
+      "citations": {
+        "total": 8,
+        "statute": 5,
+        "caseLaw": 3,
+        "exact": 5,
+        "close": 0,
+        "misquoted": 0,
+        "fabricated": 0,
+        "verified": 4
+      },
+      "docQuotes": {
+        "total": 4,
+        "found": 4
+      },
+      "retrieved": 22
+    }
+  ]
+}
