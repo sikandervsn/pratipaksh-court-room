@@ -86,13 +86,13 @@ export async function identify(req: Request): Promise<{ key: string; deny?: unde
   if (!authEnabled) return { key: `ip:${clientIp(req)}` };
   try {
     const sb = await supabaseServer();
-    const { data } = await sb.auth.getUser();
-    if (!data.user) return { key: `ip:${clientIp(req)}` };
+    const { data, error } = await sb.auth.getUser();
+    if (error || !data.user) return { deny: json("Please sign in to use Pratipaksh.", 401) };
     if (!data.user.email_confirmed_at && !data.user.phone_confirmed_at && process.env.REQUIRE_CONFIRMED_EMAIL === "1")
       return { deny: json("Please confirm your email address first.", 403) };
     return { key: `user:${data.user.id}` };
   } catch {
-    return { key: `ip:${clientIp(req)}` };
+    return { deny: json("Could not verify your session. Please sign in again.", 401) };
   }
 }
 

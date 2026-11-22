@@ -26,7 +26,7 @@ export async function supabaseServer() {
 export async function requireUser(): Promise<Response | null> {
   if (!authEnabled) return null;
   const sb = await supabaseServer();
-  const { data } = await sb.auth.getUser();
-  if (data.user) return null;
+  const { data, error } = await sb.auth.getUser();
+  if (!error && data.user) return null;
   return Response.json({ error: "Please sign in to use Pratipaksh." }, { status: 401 });
 }
